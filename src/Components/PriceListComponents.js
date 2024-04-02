@@ -3,27 +3,48 @@ import { Button, Table, } from "react-bootstrap";
 
 
 function PriceListComponents() {
-    let id_1 = 1;
-    let id_2 = 2;
-    let id_3 = 3;
-    let produto1 = "produto 1";
-    let produto2 = "produto 2";
-    let produto3 = "produto 3";
-    let categoria1 = "categoria 1";
-    let categoria2 = "categoria 2";
-    let categoria3 = "categoria 3";
-    let qntd1 = 5;
-    let qntd2 = 4;
-    let qntd3 = 3;
-    let qntd4 = 12;
-    let precoun1 = 10.00;
-    let precoun2 = 35.00;
-    let precoun3 = 41.00;
-    let precoun4 = 86.00;
-    let total1 =  (qntd1) * (precoun1);
-    let total2 =  (qntd2) * (precoun2) ;
-    let total3 =  (qntd3) * (precoun3) ;
-    let total4 =  (total1) + (total2) + (total3) ;
+   
+   
+
+    let produto_1= {
+
+        id: 1,
+        produto: "produto 1",
+        categoria: "categoria 1",
+        qntd: 5,
+        precoun: 10.00,
+        total: (2) * (4),
+
+    }
+
+    let produto_2= {
+
+        id: 2,
+        produto: "produto 2",
+        categoria: "categoria 2",
+        qntd: 4,
+        precoun: 35.00,
+        total: (4) * (4),
+
+    }
+
+    let produto_3= {
+
+        id: 3,
+        produto: "produto 3",
+        categoria: "categoria 3",
+        qntd: 5,
+        precoun: 10.00,
+        total: (4) * (4),
+
+    }
+
+    let lista_produtos=[
+        produto_1,
+        produto_2,
+        produto_3
+
+    ];
 
 
 
@@ -38,6 +59,7 @@ function PriceListComponents() {
       </thead>
 
       <tbody>
+        
         <tr>
             <td>#</td>
             <td>Produto</td>
@@ -48,41 +70,63 @@ function PriceListComponents() {
       
         </tr>
         <tr>
+                {
+                    lista_produtos.map(
+                        function(produto_1){
+                        return
+                        <tr>
         
-            <td>{id_1}</td>
-            <td>{produto1}</td>
-            <td>{categoria1}</td>
-            <td>{qntd1}</td>
-            <td>R${precoun1}</td>
-            <td>R${total1}</td>
+            <td>{produto_1.id}</td>
+            <td>{produto_1.produto}</td>
+            <td>{produto_1.categoria}</td>
+            <td>{produto_1.qntd}</td>
+            <td>R${produto_1.precoun}</td>
+            <td>R${produto_1.total}</td>
+            
+                        </tr>
+
+                        }
+                    )
+
+                }
+
+        </tr>
+        <tr>
+        
+            <td>{produto_1.id}</td>
+            <td>{produto_1.produto}</td>
+            <td>{produto_1.categoria}</td>
+            <td>{produto_1.qntd}</td>
+            <td>R${produto_1.precoun}</td>
+            <td>R${produto_1.total}</td>
             
         </tr>
         <tr>
 
-        <td>{id_2}</td>
-        <td>{produto2}</td>
-        <td>{categoria2}</td>
-        <td>{qntd2}</td>
-        <td>R${precoun2}</td>
-        <td>R${total2}</td>
+        <td>{produto_2.id}</td>
+        <td>{produto_2.produto}</td>
+        <td>{produto_2.categoria}</td>
+        <td>{produto_2.qntd}</td>
+        <td>R${produto_2.precoun}</td>
+        <td>R${produto_2.total}</td>
         
         </tr>
         <tr>
         
-        <td>{id_3}</td>
-        <td>{produto3}</td>
-        <td>{categoria3}</td>
-        <td>{qntd3}</td>
-        <td>R${precoun3}</td>
-        <td>R${total3}</td>
+        <td>{produto_3.id}</td>
+        <td>{produto_3.produto}</td>
+        <td>{produto_3.categoria}</td>
+        <td>{produto_3.qntd}</td>
+        <td>R${produto_3.precoun}</td>
+        <td>R${produto_3.total}</td>
         
         </tr>
         <tr>
 
         <td colSpan="3"></td>
-        <td>{qntd4}</td>
-        <td>R${precoun4}</td>
-        <td>R${total4}</td>
+        <td>{0}</td>
+        <td>R${0}</td>
+        <td>R${0}</td>
 
         </tr>
 
