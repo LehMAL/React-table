@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
-import PriceListComponents from './Components/PriceListComponents';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import PrincipalPage from './Pages/PrincipalPage';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PriceListComponents/>
+    <PrincipalPage/>
   </React.StrictMode>
 );
 
