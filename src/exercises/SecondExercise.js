@@ -21,7 +21,7 @@ function alterarReajuste(reaj){
 
 
     return(
-        <div>
+        <div >
             <p>Nome:{nome}</p>
             <input onChange={alterarNome}></input>
             <p>Salário:{salario}</p>
