@@ -1,9 +1,15 @@
+import FifthExercise from "../exercises/FifthExercise";
 
-import ThirdExercise from "../exercises/ThirdExercise";
+
+
 
 function PrincipalPage(){
 
-    return(<div><ThirdExercise></ThirdExercise></div>);
+    return(
+        <div>
+            <FifthExercise></FifthExercise>
+        </div>
+    );
 }
 
 export default PrincipalPage;
