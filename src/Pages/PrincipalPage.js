@@ -1,4 +1,4 @@
-import SixthExercise from "../exercises/SixthExercise";
+import SeventhExercise from "../exercises/SeventhExercise";
 
 
 
@@ -7,7 +7,7 @@ function PrincipalPage(){
 
     return(
         <div>
-            <SixthExercise></SixthExercise>
+            <SeventhExercise></SeventhExercise>
         </div>
     );
 }

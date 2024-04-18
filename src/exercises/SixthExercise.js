@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 
 function SixthExercise() {
+
     let [cep, setCep] = useState();
     let [endereco, setEndereco] = useState();
     let [alertColor, setAlertColor] = useState(null);
@@ -23,6 +24,7 @@ function SixthExercise() {
     function changeCep(elemento) {
         setCep(elemento.target.value)
     }
+    
 
     return (
         <div className="pt-4">
@@ -55,17 +57,40 @@ function SixthExercise() {
 
                         {endereco && (
                             <div className="row">
-                                <div>
-                                    <p><b>CEP:</b> {endereco.cep}</p>
-                                    <p><b>UF:</b> {endereco.uf}</p>
-                                    <p><b>Cidade:</b> {endereco.localidade}</p>
-                                    <p><b>Bairro:</b> {endereco.bairro}</p>
-                                    <p><b>Rua:</b> {endereco.logradouro}</p>       
-                                    <p><b>DDD:</b> {endereco.ddd}</p>
-                                    <p><b>IBGE:</b> {endereco.ibge}</p>
-                                    
-                                    
-                                </div>
+
+                                <table className="table table-border table-hover">
+
+                                        <tr>
+                                            <th>CEP:</th>
+                                            <td>{endereco.cep}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>UF:</th>
+                                            <td>{endereco.uf}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Cidade:</th>
+                                            <td>{endereco.localidade}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Bairro:</th>
+                                            <td>{endereco.bairro}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Rua:</th>
+                                            <td>{endereco.logradouro}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>DDD:</th>
+                                            <td>{endereco.ddd}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>IBGE:</th>
+                                            <td>{endereco.ibge}</td>
+                                        </tr>
+
+                                </table>
+                                
                             </div>
                         )}
                     </div>
