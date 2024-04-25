@@ -31,8 +31,8 @@ function SixthExercise() {
 
             <div className="card mx-5 mb-3">
 
-                <div className="card-header">
-                <h4>Exercício 6</h4>
+                <div className="card-header h4">
+                Exercício 6
                 </div>
 
                     <div className="card-body mt-2">

@@ -36,9 +36,10 @@ function FifthExercise() {
     };
 
     return (
-        <div className="card mx-3 mb-3"> 
+        <div className="pt-4">
+        <div className="card mx-5 mb-3"> 
             <div className="card-header h4">
-                <b>Exercício 5</b>
+                Exercício 5
             </div>
             <div className="card-body mt-2">
                 <div className="row align-items-center">
@@ -77,6 +78,7 @@ function FifthExercise() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

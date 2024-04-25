@@ -1,4 +1,4 @@
-import SeventhExercise from "../exercises/SeventhExercise";
+
 
 
 
@@ -6,8 +6,17 @@ import SeventhExercise from "../exercises/SeventhExercise";
 function PrincipalPage(){
 
     return(
-        <div>
-            <SeventhExercise></SeventhExercise>
+        <div className="pt-4">
+
+            <div className="card mx-5 mb-3">
+
+                <div className="card-boby "> 
+                    Olá
+                </div>
+
+
+            </div>
+           
         </div>
     );
 }

@@ -27,9 +27,14 @@ function alterarEmpates(emp){
 
 
         return(
-            <div style={{ textAlign: 'center' }}>
+            <div className="pt-4" style={{ textAlign: 'center' }}>
+                <div className="card mx-5 b-3">
+                    <div className="card-header h4">
+                        Exercício 3
+                    </div>
+                    <div className="card-body mt-2">
 
-                <Container>
+                    <Container>
                 <Row>
 
                 <div class="col-sm-12 col-md-6 col-lg-12">
@@ -41,7 +46,7 @@ function alterarEmpates(emp){
                     maxLength={25} 
                     placeholder="Insira o time aqui!"
                     onChange={alterarTime}/>
-                </div>
+                </div><br/>
 
                 <div class="col-sm-12 col-md-6 col-lg-12">
 
@@ -54,7 +59,7 @@ function alterarEmpates(emp){
                     placeholder="Nº Vitórias"
                     disabled={!time}
                     onChange={alterarVitorias}/>
-                </div>
+                </div><br/>
 
                 <div class="col-sm-12 col-md-6 col-lg-12">
 
@@ -67,7 +72,7 @@ function alterarEmpates(emp){
                     placeholder="Nº Empates"
                     disabled={!vitorias}
                     onChange={alterarEmpates}/>
-                </div>
+                </div><br/>
 
                 </Row>
                 </Container>
@@ -82,6 +87,12 @@ function alterarEmpates(emp){
                     >Total de Pontos:{totalpontos}</button>
 
                 </div>
+
+                    </div>
+
+                </div>
+
+             
 
             </div>
         );

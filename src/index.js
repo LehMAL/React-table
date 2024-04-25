@@ -27,6 +27,10 @@ const router = createBrowserRouter([
     element: <FirstExercise />,
   },
   {
+    path: "",
+    element: <PrincipalPage />,
+  },
+  {
     path: "/2",
     element: <SecondExercise />,
   },
@@ -61,9 +65,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
+    
    <NavibarComponent/>
     <RouterProvider router={router} />
   </React.StrictMode>
+  
 );
 
 
